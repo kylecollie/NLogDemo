@@ -34,7 +34,15 @@ namespace NLogDemo
 
         private void btnError_Click(object sender, EventArgs e)
         {
-            logger.Error("This is an error message.");
+            try
+            {
+                lblResult.Text =  (Convert.ToDecimal(tbxDividend.Text) / Convert.ToDecimal(tbxDivisor.Text)).ToString();
+                lblResult.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "This is an error message.");
+            }
         }
 
         private void btnFatal_Click(object sender, EventArgs e)

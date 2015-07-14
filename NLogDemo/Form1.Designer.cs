@@ -35,6 +35,10 @@
             this.btnError = new System.Windows.Forms.Button();
             this.btnFatal = new System.Windows.Forms.Button();
             this.btnOff = new System.Windows.Forms.Button();
+            this.tbxDividend = new System.Windows.Forms.TextBox();
+            this.tbxDivisor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTrace
@@ -107,11 +111,48 @@
             this.btnOff.UseVisualStyleBackColor = true;
             this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
             // 
+            // tbxDividend
+            // 
+            this.tbxDividend.Location = new System.Drawing.Point(415, 379);
+            this.tbxDividend.Name = "tbxDividend";
+            this.tbxDividend.Size = new System.Drawing.Size(37, 22);
+            this.tbxDividend.TabIndex = 7;
+            // 
+            // tbxDivisor
+            // 
+            this.tbxDivisor.Location = new System.Drawing.Point(476, 379);
+            this.tbxDivisor.Name = "tbxDivisor";
+            this.tbxDivisor.Size = new System.Drawing.Size(37, 22);
+            this.tbxDivisor.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(458, 382);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(12, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "/";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(437, 417);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(46, 17);
+            this.lblResult.TabIndex = 10;
+            this.lblResult.Text = "label2";
+            this.lblResult.Visible = false;
+            // 
             // frmNLogDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 614);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbxDivisor);
+            this.Controls.Add(this.tbxDividend);
             this.Controls.Add(this.btnOff);
             this.Controls.Add(this.btnFatal);
             this.Controls.Add(this.btnError);
@@ -122,6 +163,7 @@
             this.Name = "frmNLogDemo";
             this.Text = "NLog Demo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,6 +176,10 @@
         private System.Windows.Forms.Button btnError;
         private System.Windows.Forms.Button btnFatal;
         private System.Windows.Forms.Button btnOff;
+        private System.Windows.Forms.TextBox tbxDividend;
+        private System.Windows.Forms.TextBox tbxDivisor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
